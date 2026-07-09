@@ -1,0 +1,6 @@
+| Strategy | Net SR | Gross SR | Turnover | Stability |
+| --- | --- | --- | --- | --- |
+| MomentumSort | 0.360 | 0.582 | 17.0% |  |
+| Ridge\_EMA\_0.25 | 0.463 | 0.572 | 8.0% | 0.974 |
+| Ridge\_EMA\_0.35 | 0.474 | 0.608 | 9.7% | 0.957 |
+| Ridge\_WF\_EMA | 0.451 | 0.597 | 10.3% | 0.919 |

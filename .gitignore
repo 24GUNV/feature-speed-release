@@ -1,0 +1,20 @@
+# Raw data (not distributed; see README for sources)
+data/
+public/data/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# OS
+.DS_Store

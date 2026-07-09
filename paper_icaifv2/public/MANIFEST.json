@@ -1,0 +1,247 @@
+{
+  "version": "2026-07-06",
+  "paper": {
+    "source_tex": "paper_icaifv2/main_v6_frontier.tex",
+    "source_pdf": "paper_icaifv2/main_v6_frontier.pdf",
+    "figures_dir": "paper_icaifv2/figures"
+  },
+  "canonical_results": [
+    {
+      "id": "ml_vs_sorts",
+      "script": "scripts/concern_experiments/expAX_full_comparison.py",
+      "output": "scripts/concern_experiments/expAX_full_comparison.csv",
+      "paper_use": "Main ML-vs-sort comparison at 3x costs",
+      "status": "canonical"
+    },
+    {
+      "id": "feature_speed",
+      "script": "scripts/concern_experiments/expAH_feature_speed_test.py",
+      "output": "scripts/concern_experiments/expAH_feature_speed_test.csv",
+      "paper_use": "Slow/medium/fast feature ablation and quarterly rebalancing",
+      "status": "canonical"
+    },
+    {
+      "id": "persistence_filter",
+      "script": "scripts/concern_experiments/expAN_persistence_filter.py",
+      "output": "scripts/concern_experiments/expAN_persistence_filter.csv",
+      "paper_use": "Persistence-filter robustness",
+      "status": "supporting"
+    },
+    {
+      "id": "ema_robustness",
+      "script": "scripts/concern_experiments/expAR_ema_robustness.py",
+      "output": "scripts/concern_experiments/expAR_ema_robustness.csv",
+      "paper_use": "Fixed and walk-forward EMA smoothing",
+      "status": "canonical",
+      "caveat": "Walk-forward alpha selection uses in-sample evaluation months from the current training model."
+    },
+    {
+      "id": "tree_smoothing",
+      "script": "scripts/concern_experiments/expCP_tree_smoothing.py",
+      "output": "scripts/concern_experiments/expCP_tree_smoothing.csv",
+      "paper_use": "Tree model baseline/smoothing comparison",
+      "status": "canonical"
+    },
+    {
+      "id": "tree_ema",
+      "script": "scripts/concern_experiments/expDF_tree_ema.py",
+      "output": "scripts/concern_experiments/expDF_tree_ema.csv",
+      "paper_use": "XGB EMA 0.5 result",
+      "status": "supporting",
+      "caveat": "Uses a fixed post-2020 OOS window with 50 months."
+    },
+    {
+      "id": "transfer_bound",
+      "script": "scripts/concern_experiments/expDE_transfer_test.py",
+      "output": "scripts/concern_experiments/expDE_transfer_test.csv",
+      "paper_use": "Cross-market transfer validation for the cost-speed bound",
+      "status": "canonical",
+      "caveat": "Uses the same equal-weight feature-set FSI convention as the current bound figure."
+    },
+    {
+      "id": "us_validation",
+      "script": "scripts/concern_experiments/expCM_us_comparison.py",
+      "output": "scripts/concern_experiments/expCM_us_comparison.csv",
+      "paper_use": "US validation table",
+      "status": "canonical"
+    },
+    {
+      "id": "bound_figure",
+      "script": "scripts/concern_experiments/generate_bound_figure.py",
+      "output": "paper_icaifv2/figures/cost_speed_bound.pdf",
+      "paper_use": "Cost-speed bound figure",
+      "status": "canonical",
+      "caveat": "Writes public result CSVs checked by verify_paper_claims.py."
+    },
+    {
+      "id": "frontier_figure",
+      "script": "scripts/concern_experiments/generate_frontier_figure.py",
+      "output": "paper_icaifv2/figures/cost_speed_frontier.pdf",
+      "paper_use": "Cost-speed frontier figure",
+      "status": "canonical",
+      "caveat": "Writes public frontier-points CSV checked by verify_paper_claims.py."
+    },
+    {
+      "id": "aggregation_vs_speed",
+      "script": "scripts/concern_experiments/expAI_aggregation_vs_speed.py",
+      "output": "scripts/concern_experiments/expAI_aggregation_vs_speed.csv",
+      "paper_use": "Sec 4.4 aggregation-versus-speed turnover comparison at matched feature count",
+      "status": "supporting"
+    },
+    {
+      "id": "ic_decay",
+      "script": "scripts/concern_experiments/expDG_ic_decay.py",
+      "output": "scripts/concern_experiments/expDG_ic_decay.csv",
+      "paper_use": "Sec 4.3 model-free IC decay by feature speed (Figure 2)",
+      "status": "supporting"
+    },
+    {
+      "id": "statistical_tests",
+      "script": "scripts/concern_experiments/expAX_statistical_tests.py",
+      "output": "scripts/concern_experiments/expAX_statistical_tests.csv",
+      "paper_use": "Jobson-Korkie-Memmel tests and bootstrap crossover CIs",
+      "status": "supporting"
+    },
+    {
+      "id": "turnover_decomposition",
+      "script": "scripts/concern_experiments/expAX_turnover_decomposition.py",
+      "output": "scripts/concern_experiments/expAX_turnover_decomposition.csv",
+      "paper_use": "Table 3: importance and prediction-change shares by feature speed (3 markets)",
+      "status": "canonical",
+      "caveat": "Rerun 2026-07-06 with lag=1 (was lag=4 accounting)."
+    },
+    {
+      "id": "information_coefficient",
+      "script": "scripts/concern_experiments/expAK_information_coefficient.py",
+      "output": "scripts/concern_experiments/expAK_information_coefficient.csv",
+      "paper_use": "IC analysis table",
+      "status": "canonical",
+      "caveat": "Rerun 2026-07-06 with lag=1 (was lag=4 accounting)."
+    },
+    {
+      "id": "speed_classification",
+      "script": "scripts/concern_experiments/expAM_empirical_speed_classification.py",
+      "output": "scripts/concern_experiments/expAM_empirical_speed_classification.csv",
+      "paper_use": "Speed-class rank ACs and Kruskal-Wallis validation",
+      "status": "supporting"
+    },
+    {
+      "id": "long_short",
+      "script": "scripts/concern_experiments/expAY_long_short.py",
+      "output": "scripts/concern_experiments/expAY_long_short.csv",
+      "paper_use": "Long-short / short-only robustness (BRA, IND, KOR, THA, TWN)",
+      "status": "supporting",
+      "caveat": "Rerun 2026-07-06 with lag=1 (was lag=4 accounting)."
+    },
+    {
+      "id": "ranktarget_tercile",
+      "script": "scripts/concern_experiments/expCL_ranktarget_feature_speed.py",
+      "output": "scripts/concern_experiments/expCL_ranktarget_feature_speed.csv",
+      "paper_use": "Data-driven speed-tercile classification (~127 slow features)",
+      "status": "supporting"
+    },
+    {
+      "id": "alpha_sharpe",
+      "script": "scripts/concern_experiments/expCS_alpha_sharpe.py",
+      "output": "scripts/concern_experiments/expCS_alpha_sharpe.csv",
+      "paper_use": "Alpha Sharpe ratios vs EW benchmark; monthly returns for pooled tests",
+      "status": "canonical"
+    },
+    {
+      "id": "fsi_diagnostic",
+      "script": "scripts/concern_experiments/expDA_fsi_adaptive.py",
+      "output": "scripts/concern_experiments/expDA_fsi_diagnostic.csv",
+      "paper_use": "Per-feature rank autocorrelation (FSI input to bound/transfer)",
+      "status": "canonical"
+    },
+    {
+      "id": "cost_aware_nn",
+      "script": "scripts/concern_experiments/expDB_cost_aware_nn.py",
+      "output": "scripts/concern_experiments/expDB_cost_aware_nn.csv",
+      "paper_use": "Cost-aware NN alternatives table",
+      "status": "supporting"
+    },
+    {
+      "id": "pooled_bootstrap",
+      "script": "scripts/concern_experiments/expDH_pooled_bootstrap.py",
+      "output": "scripts/concern_experiments/expDH_pooled_bootstrap.csv",
+      "paper_use": "Pinned pooled block bootstrap for Ridge_Slow vs MomSort significance",
+      "status": "canonical",
+      "caveat": "Added 2026-07-06; source for the statistical-significance paragraph."
+    },
+    {
+      "id": "cost_speed_figure",
+      "script": "scripts/concern_experiments/generate_cost_speed_figure.py",
+      "output": "paper_icaifv2/figures/cost_speed_crossover.pdf",
+      "paper_use": "Cost-speed crossover figure",
+      "status": "canonical"
+    },
+    {
+      "id": "fsi_figures",
+      "script": "scripts/concern_experiments/generate_fsi_figures.py",
+      "output": "paper_icaifv2/figures/two_by_two.pdf",
+      "paper_use": "FSI scatter and 2x2 framework figures",
+      "status": "supporting"
+    },
+    {
+      "id": "frontier_diagnostics",
+      "script": "scripts/concern_experiments/expDI_frontier_diagnostics.py",
+      "output": "scripts/concern_experiments/expDI_frontier_diagnostics.csv",
+      "paper_use": "Sec 4.6 frontier decomposition: per-kappa cross-sectional R2 (0.64-0.65), lambda=0.33 per-kappa slope convention, kappa-alone pooled R2 (0.37), turnover~FSI R2 (0.73), partial corr(FSI, deg | TO) ~0.25",
+      "status": "canonical"
+    },
+    {
+      "id": "joint_interventions",
+      "script": "scripts/concern_experiments/expDJ_joint_interventions.py",
+      "output": "scripts/concern_experiments/expDJ_joint_interventions.csv",
+      "paper_use": "Robustness / statistical significance: exact market-level sign-flip test pooling all eight frontier interventions vs MomentumSort (mean +0.11, p = 0.008; Wilcoxon p = 0.015)",
+      "status": "canonical"
+    },
+    {
+      "id": "grc_exclusion",
+      "script": "scripts/concern_experiments/expDK_grc_exclusion.py",
+      "output": "scripts/concern_experiments/expDK_grc_exclusion.csv",
+      "paper_use": "Robustness: headline means excluding smallest universe GRC N=50 (Ridge_Slow 0.45 vs MomSort 0.36; frontier band 0.42-0.47)",
+      "status": "canonical"
+    },
+    {
+      "id": "iwfsi_negative_control",
+      "script": "scripts/concern_experiments/expDL_iwfsi_prototype.py",
+      "output": "scripts/concern_experiments/expDL_iwfsi_prototype.csv",
+      "paper_use": "Documented negative control (not in paper): importance-weighted FSI does NOT add within-strategy cross-market resolution (R2 <= 0.06 vs turnover, ~0 vs degradation). Confirms FSI resolution is at the feature-set level; fast-weight share is uncorrelated with cross-market turnover.",
+      "status": "negative_control"
+    },
+    {
+      "id": "full_oos_tree_ema",
+      "script": "scripts/concern_experiments/expDM_xgb_ema_full_oos.py",
+      "output": "scripts/concern_experiments/expDM_xgb_ema_full_oos.csv",
+      "paper_use": "Tree-EMA on the main OOS sample (2021-2023, 15 markets): XGBoost 0.24 -> walk-forward EMA 0.35 (sort parity, not frontier); best post-hoc fixed alpha=0.2 gives 0.45 at 12% TO. Replaces the post-2020 validation 0.53 claim, which does not replicate. MomentumSort reproduces expAX exactly (pipeline fidelity).",
+      "status": "canonical"
+    },
+    {
+      "id": "construction_robustness",
+      "script": "scripts/concern_experiments/expDN_construction_robustness.py",
+      "output": "scripts/concern_experiments/expDN_construction_robustness.csv",
+      "paper_use": "Robustness: value-weighted construction preserves the hierarchy (Ridge_Slow 0.40 > MomSort 0.31 > Ridge_All 0.30 at kappa=3; wins 10/15, positive 14/15). Uses drift-adjusted weight turnover, so turnover levels are not comparable to the equal-weight name-count convention.",
+      "status": "canonical"
+    }
+  ],
+  "paper_build_outputs": [
+    {
+      "id": "verified_tables",
+      "script": "paper_icaifv2/public/scripts/build_paper_tables.py",
+      "output_dir": "paper_icaifv2/public/results/tables",
+      "paper_use": "LaTeX and Markdown tables generated from canonical CSVs"
+    }
+  ],
+  "do_not_use_as_evidence": [
+    {
+      "path": "paper_icaifv2/results_summary.md",
+      "reason": "Stale intermediate narrative with old Ridge numbers."
+    },
+    {
+      "path": "scripts/concern_experiments/expAX_statistical_tests_summary.md",
+      "reason": "Stale statistical summary inconsistent with current expAX output."
+    }
+  ]
+}

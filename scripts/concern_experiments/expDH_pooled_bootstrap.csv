@@ -1,0 +1,2 @@
+obs_sr_diff,boot_p_onesided,boot_ci_lo,boot_ci_hi,boot_frac_positive,market_wins,n_markets,pooled_T,effect_size_d,t_stat,p_t_onesided,months_for_80pct_power,block,replications,seed
+0.1690097465614379,0.0991,-0.0824885965096536,0.5121772823425597,0.9009,11,15,93,0.07956174061962806,0.7672656404724003,0.22244410792849534,976.6964148718323,6,10000,42

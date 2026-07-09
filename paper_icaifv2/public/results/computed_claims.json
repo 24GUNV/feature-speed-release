@@ -1,0 +1,603 @@
+{
+  "expAH_oos_3x": {
+    "MomentumSort": {
+      "Net_SR": 0.3596,
+      "Turnover": 0.1699
+    },
+    "MomentumSort_Q": {
+      "Net_SR": 0.3734,
+      "Turnover": 0.12
+    },
+    "Ridge_All": {
+      "Net_SR": 0.3527,
+      "Turnover": 0.2332
+    },
+    "Ridge_All_Q": {
+      "Net_SR": 0.4815,
+      "Turnover": 0.1129
+    },
+    "Ridge_Fast": {
+      "Net_SR": 0.2082,
+      "Turnover": 0.3006
+    },
+    "Ridge_Slow": {
+      "Net_SR": 0.472,
+      "Turnover": 0.1016
+    },
+    "Ridge_SlowMed": {
+      "Net_SR": 0.3929,
+      "Turnover": 0.1451
+    },
+    "Ridge_Slow_Q": {
+      "Net_SR": 0.4881,
+      "Turnover": 0.0734
+    }
+  },
+  "expAI_oos_3x_turnover": {
+    "CompositeSort_10": 0.0576,
+    "CompositeSort_151": 0.1395,
+    "CompositeSort_20": 0.0698,
+    "CompositeSort_5": 0.0556,
+    "CompositeSort_50": 0.0681,
+    "MomentumSort": 0.1699,
+    "Ridge_10": 0.0558,
+    "Ridge_20": 0.0761,
+    "Ridge_5": 0.0507,
+    "Ridge_50": 0.0817,
+    "Ridge_All": 0.2332,
+    "Sort_be_me": 0.0453,
+    "Sort_f_score": 0.125,
+    "Sort_gp_at": 0.0372,
+    "Sort_ivol_capm_21d": 0.4428,
+    "Sort_oaccruals_at": 0.0895,
+    "Sort_ret_12_1": 0.1699,
+    "Sort_ret_3_1": 0.4898,
+    "Sort_ret_6_1": 0.2752,
+    "Sort_rvol_21d": 0.4299
+  },
+  "expAK_ic": {
+    "CompositeSort": {
+      "Mean_IC": 0.0104,
+      "Pred_Stability": 0.8452
+    },
+    "MomentumSort": {
+      "Mean_IC": 0.0311,
+      "Pred_Stability": 0.8941
+    },
+    "Ridge_All": {
+      "Mean_IC": 0.0221,
+      "Pred_Stability": 0.6653
+    },
+    "Ridge_Fast": {
+      "Mean_IC": 0.0126,
+      "Pred_Stability": 0.5385
+    },
+    "Ridge_Slow": {
+      "Mean_IC": 0.0314,
+      "Pred_Stability": 0.9394
+    }
+  },
+  "expAN_oos_3x_net_sr": {
+    "MomentumSort": 0.3596,
+    "Ridge_AdhocSlow": 0.472,
+    "Ridge_All": 0.3527,
+    "Ridge_EmpSlow_FS": 0.4695,
+    "Ridge_PersFiltered": 0.4723
+  },
+  "expAR_oos_3x": {
+    "MomentumSort": {
+      "Net_SR": 0.3596,
+      "Turnover": 0.1699
+    },
+    "Ridge_EMA_0.05": {
+      "Net_SR": 0.3542,
+      "Turnover": 0.052
+    },
+    "Ridge_EMA_0.1": {
+      "Net_SR": 0.4113,
+      "Turnover": 0.0591
+    },
+    "Ridge_EMA_0.15": {
+      "Net_SR": 0.414,
+      "Turnover": 0.0654
+    },
+    "Ridge_EMA_0.2": {
+      "Net_SR": 0.4336,
+      "Turnover": 0.0731
+    },
+    "Ridge_EMA_0.25": {
+      "Net_SR": 0.4626,
+      "Turnover": 0.0801
+    },
+    "Ridge_EMA_0.3": {
+      "Net_SR": 0.4637,
+      "Turnover": 0.0887
+    },
+    "Ridge_EMA_0.35": {
+      "Net_SR": 0.4741,
+      "Turnover": 0.0971
+    },
+    "Ridge_EMA_0.4": {
+      "Net_SR": 0.4696,
+      "Turnover": 0.1064
+    },
+    "Ridge_EMA_0.45": {
+      "Net_SR": 0.4669,
+      "Turnover": 0.115
+    },
+    "Ridge_EMA_0.5": {
+      "Net_SR": 0.4738,
+      "Turnover": 0.1231
+    },
+    "Ridge_EMA_0.6": {
+      "Net_SR": 0.4516,
+      "Turnover": 0.1423
+    },
+    "Ridge_EMA_0.7": {
+      "Net_SR": 0.4471,
+      "Turnover": 0.1624
+    },
+    "Ridge_EMA_0.8": {
+      "Net_SR": 0.4382,
+      "Turnover": 0.1858
+    },
+    "Ridge_EMA_0.9": {
+      "Net_SR": 0.3939,
+      "Turnover": 0.2122
+    },
+    "Ridge_EMA_1.0": {
+      "Net_SR": 0.3527,
+      "Turnover": 0.2332
+    },
+    "Ridge_WF_EMA": {
+      "Net_SR": 0.4513,
+      "Turnover": 0.1028
+    }
+  },
+  "expAX_oos_3x": {
+    "CompositeSort": {
+      "Gross_SR": 0.5565,
+      "Net_SR": 0.3238,
+      "Turnover": 0.1673
+    },
+    "LightGBM": {
+      "Gross_SR": 0.6375,
+      "Net_SR": 0.1269,
+      "Turnover": 0.3824
+    },
+    "LowVolSort": {
+      "Gross_SR": 0.44,
+      "Net_SR": -0.0758,
+      "Turnover": 0.4428
+    },
+    "MomentumML_Blend": {
+      "Gross_SR": 0.6334,
+      "Net_SR": 0.3829,
+      "Turnover": 0.19
+    },
+    "MomentumSort": {
+      "Gross_SR": 0.5816,
+      "Net_SR": 0.3596,
+      "Turnover": 0.1699
+    },
+    "Ridge": {
+      "Gross_SR": 0.6824,
+      "Net_SR": 0.3527,
+      "Turnover": 0.2332
+    },
+    "XGBoost": {
+      "Gross_SR": 0.6571,
+      "Net_SR": 0.1691,
+      "Turnover": 0.3632
+    }
+  },
+  "expAY_short_only_3x": {
+    "CompositeSort": -0.5602,
+    "LightGBM": -0.9717,
+    "LowVolSort": -0.9659,
+    "MomentumML_Blend": -0.4395,
+    "MomentumSort": -0.4355,
+    "Ridge": -0.7642,
+    "XGBoost": -0.9754
+  },
+  "expCM_us_oos": {
+    "MomentumSort@0x": {
+      "Net_SR": 0.7747
+    },
+    "MomentumSort@1x": {
+      "Net_SR": 0.693
+    },
+    "MomentumSort@2x": {
+      "Net_SR": 0.6115
+    },
+    "MomentumSort@3x": {
+      "Net_SR": 0.5303
+    },
+    "Ridge_All@0x": {
+      "Net_SR": 0.5802
+    },
+    "Ridge_All@1x": {
+      "Net_SR": 0.4449
+    },
+    "Ridge_All@2x": {
+      "Net_SR": 0.3097
+    },
+    "Ridge_All@3x": {
+      "Net_SR": 0.1746
+    },
+    "Ridge_Fast@0x": {
+      "Net_SR": 0.4041
+    },
+    "Ridge_Fast@1x": {
+      "Net_SR": 0.2062
+    },
+    "Ridge_Fast@2x": {
+      "Net_SR": 0.0084
+    },
+    "Ridge_Fast@3x": {
+      "Net_SR": -0.1892
+    },
+    "Ridge_Slow@0x": {
+      "Net_SR": 0.6385
+    },
+    "Ridge_Slow@1x": {
+      "Net_SR": 0.5958
+    },
+    "Ridge_Slow@2x": {
+      "Net_SR": 0.5531
+    },
+    "Ridge_Slow@3x": {
+      "Net_SR": 0.5103
+    }
+  },
+  "expCP_3x": {
+    "LGBM_All": {
+      "Gross_SR": 0.7475,
+      "Net_SR": 0.2652,
+      "Turnover": 0.3553
+    },
+    "LGBM_AllSmoothed": {
+      "Gross_SR": 0.7057,
+      "Net_SR": 0.3079,
+      "Turnover": 0.2866
+    },
+    "LGBM_Slow": {
+      "Gross_SR": 0.6569,
+      "Net_SR": 0.2412,
+      "Turnover": 0.3086
+    },
+    "MomentumSort": {
+      "Gross_SR": 0.6057,
+      "Net_SR": 0.3731,
+      "Turnover": 0.1721
+    },
+    "Ridge_All": {
+      "Gross_SR": 0.6836,
+      "Net_SR": 0.3575,
+      "Turnover": 0.2301
+    },
+    "Ridge_AllSmoothed": {
+      "Gross_SR": 0.6162,
+      "Net_SR": 0.4679,
+      "Turnover": 0.1036
+    },
+    "Ridge_Slow": {
+      "Gross_SR": 0.6159,
+      "Net_SR": 0.4793,
+      "Turnover": 0.0991
+    },
+    "XGB_All": {
+      "Gross_SR": 0.767,
+      "Net_SR": 0.3003,
+      "Turnover": 0.3455
+    },
+    "XGB_AllSmoothed": {
+      "Gross_SR": 0.7394,
+      "Net_SR": 0.3478,
+      "Turnover": 0.2788
+    },
+    "XGB_Slow": {
+      "Gross_SR": 0.6475,
+      "Net_SR": 0.2629,
+      "Turnover": 0.2865
+    }
+  },
+  "expDA_class_rank_ac": {
+    "FAST": 0.675,
+    "MEDIUM": 0.8295,
+    "SLOW": 0.965
+  },
+  "expDE_transfer": {
+    "boot_lambda_hi": 0.44760305898094455,
+    "boot_lambda_lo": 0.3395443645038035,
+    "boot_r2_hi": 0.7981768034585894,
+    "boot_r2_lo": 0.6646768279370578,
+    "in_sample_lambda": 0.39245769604624603,
+    "in_sample_r2": 0.7238699193991565,
+    "l5o_5pct_r2": 0.5407595299735881,
+    "l5o_95pct_r2": 0.786325773835365,
+    "l5o_mean_r2": 0.6879266578378853,
+    "l5o_median_r2": 0.7001578830010777,
+    "loo_lambda_std": 0.007913868912094583,
+    "loo_mean_r2": 0.5955322223541323,
+    "slow_jaccard_mean": 0.971086446274416,
+    "universal_slow_count": 52
+  },
+  "expDF_oos_3x": {
+    "LGBM_EMA_0.2": {
+      "Gross_SR": 0.5758,
+      "Net_SR": 0.2083,
+      "Turnover": 0.3446
+    },
+    "LGBM_EMA_0.35": {
+      "Gross_SR": 0.7859,
+      "Net_SR": 0.4123,
+      "Turnover": 0.3353
+    },
+    "LGBM_EMA_0.5": {
+      "Gross_SR": 0.8095,
+      "Net_SR": 0.3184,
+      "Turnover": 0.3846
+    },
+    "LGBM_EMA_0.7": {
+      "Gross_SR": 0.7819,
+      "Net_SR": 0.164,
+      "Turnover": 0.4529
+    },
+    "LightGBM": {
+      "Gross_SR": 0.7161,
+      "Net_SR": -0.0917,
+      "Turnover": 0.5407
+    },
+    "Ridge_Slow": {
+      "Gross_SR": 0.6283,
+      "Net_SR": 0.4791,
+      "Turnover": 0.0884
+    },
+    "XGB_EMA_0.2": {
+      "Gross_SR": 0.6923,
+      "Net_SR": 0.443,
+      "Turnover": 0.1807
+    },
+    "XGB_EMA_0.35": {
+      "Gross_SR": 0.8029,
+      "Net_SR": 0.4974,
+      "Turnover": 0.2172
+    },
+    "XGB_EMA_0.5": {
+      "Gross_SR": 0.9106,
+      "Net_SR": 0.5265,
+      "Turnover": 0.2607
+    },
+    "XGB_EMA_0.7": {
+      "Gross_SR": 0.859,
+      "Net_SR": 0.3686,
+      "Turnover": 0.3356
+    },
+    "XGBoost": {
+      "Gross_SR": 0.743,
+      "Net_SR": 0.0875,
+      "Turnover": 0.4446
+    }
+  },
+  "expDG_ic_decay": {
+    "h1_ic": {
+      "FAST": 0.0248,
+      "MEDIUM": 0.0129,
+      "SLOW": 0.0268
+    },
+    "retention_h12": {
+      "FAST": 0.5659,
+      "MEDIUM": 0.6447,
+      "SLOW": 0.6933
+    }
+  },
+  "expDH_pooled_bootstrap": {
+    "block": 6.0,
+    "boot_ci_hi": 0.5121772823425597,
+    "boot_ci_lo": -0.0824885965096536,
+    "boot_frac_positive": 0.9009,
+    "boot_p_onesided": 0.0991,
+    "effect_size_d": 0.07956174061962806,
+    "market_wins": 11.0,
+    "months_for_80pct_power": 976.6964148718323,
+    "n_markets": 15.0,
+    "obs_sr_diff": 0.1690097465614379,
+    "p_t_onesided": 0.22244410792849534,
+    "pooled_T": 93.0,
+    "replications": 10000.0,
+    "seed": 42.0,
+    "t_stat": 0.7672656404724003
+  },
+  "expDI_frontier_diagnostics": {
+    "cross_sectional_kappa_1": 0.6381,
+    "cross_sectional_kappa_1.5": 0.6397,
+    "cross_sectional_kappa_2": 0.6443,
+    "cross_sectional_kappa_3": 0.6537,
+    "fsi_coef_spread_controlled_kappa_3": 1.0017,
+    "lambda_ci_hi_cluster_market": 0.402,
+    "lambda_ci_hi_cluster_strategy": 0.4111,
+    "lambda_ci_lo_cluster_market": 0.2656,
+    "lambda_ci_lo_cluster_strategy": 0.2564,
+    "partial_corr_fsi_given_turnover_kappa_1": 0.2442,
+    "partial_corr_fsi_given_turnover_kappa_3": 0.2628,
+    "pooled_2ch_fsi_coef": 1.008,
+    "pooled_2ch_fsi_only_r2": 0.3359,
+    "pooled_2ch_full_r2": 0.734,
+    "pooled_2ch_nonsmooth_coef": 0.2233,
+    "pooled_kappa_fsi_r2": 0.7239,
+    "pooled_kappa_only_r2": 0.3715,
+    "r2_fsi_plus_spread_kappa_3": 0.6543,
+    "turnover_on_fsi_r2": 0.7268,
+    "within_strategy_r2_kappa_3": 0.0648
+  },
+  "expDJ_joint_interventions": {
+    "EMA_0.35": {
+      "mean_sr_diff": 0.1144,
+      "signflip_p": 0.0219
+    },
+    "JOINT_all_eight": {
+      "mean_sr_diff": 0.1119,
+      "signflip_p": 0.0079
+    },
+    "PersistenceFilter": {
+      "mean_sr_diff": 0.1126,
+      "signflip_p": 0.0108
+    },
+    "RT_Slow": {
+      "mean_sr_diff": 0.1042,
+      "signflip_p": 0.0132
+    },
+    "Ridge_All_Q": {
+      "mean_sr_diff": 0.1219,
+      "signflip_p": 0.0131
+    },
+    "Ridge_Slow": {
+      "mean_sr_diff": 0.1124,
+      "signflip_p": 0.0083
+    },
+    "Ridge_Slow_Q": {
+      "mean_sr_diff": 0.1285,
+      "signflip_p": 0.0029
+    },
+    "SpeedTercile": {
+      "mean_sr_diff": 0.1099,
+      "signflip_p": 0.0179
+    },
+    "WF_EMA": {
+      "mean_sr_diff": 0.0916,
+      "signflip_p": 0.0355
+    }
+  },
+  "expDK_grc_exclusion": {
+    "Blend": 0.375,
+    "CompositeSort": 0.2812,
+    "EMA_0.35": 0.4541,
+    "LightGBM": 0.1004,
+    "MomentumSort": 0.3546,
+    "PersistenceFilter": 0.4327,
+    "RT_Slow": 0.4244,
+    "Ridge_All": 0.3261,
+    "Ridge_All_Q": 0.4639,
+    "Ridge_Fast": 0.2073,
+    "Ridge_Slow": 0.4526,
+    "Ridge_Slow_Q": 0.4699,
+    "SpeedTercile": 0.4405,
+    "WF_EMA": 0.4317,
+    "XGBoost": 0.1352
+  },
+  "expDM_full_oos_tree_ema": {
+    "MomentumSort": 0.3596,
+    "XGB_EMA_0.2": 0.4463,
+    "XGB_EMA_0.35": 0.4363,
+    "XGB_EMA_0.5": 0.4166,
+    "XGB_EMA_0.7": 0.3434,
+    "XGB_WF_EMA": 0.3505,
+    "XGBoost": 0.2368
+  },
+  "expDN_value_weighted": {
+    "MomentumSort": 0.3051,
+    "Ridge_All": 0.2982,
+    "Ridge_Slow": 0.3999
+  },
+  "generated_bound_summary": {
+    "fsi_definition": "equal_weight_feature_set",
+    "lambda": 0.3925,
+    "n": 300,
+    "per_kappa_lambda_mean": 0.3344,
+    "per_kappa_lambda_std": 0.0007,
+    "r2": 0.7239
+  },
+  "generated_frontier_points": {
+    "Blend": {
+      "Net_SR": 0.3829,
+      "Source": "expAX",
+      "Turnover": 0.19
+    },
+    "CostAware_Linear": {
+      "Net_SR": 0.3665,
+      "Source": "expDB",
+      "Turnover": 0.0714
+    },
+    "CostAware_Lip": {
+      "Net_SR": 0.3422,
+      "Source": "expDB",
+      "Turnover": 0.1259
+    },
+    "LGBM_All": {
+      "Net_SR": 0.2652,
+      "Source": "expCP",
+      "Turnover": 0.3553
+    },
+    "LGBM_Slow": {
+      "Net_SR": 0.2412,
+      "Source": "expCP",
+      "Turnover": 0.3086
+    },
+    "Lipschitz_NN": {
+      "Net_SR": 0.0663,
+      "Source": "expDB",
+      "Turnover": 0.3337
+    },
+    "MomentumSort": {
+      "Net_SR": 0.3596,
+      "Source": "expAH",
+      "Turnover": 0.1699
+    },
+    "PersistFilter": {
+      "Net_SR": 0.4723,
+      "Source": "expAN",
+      "Turnover": 0.1333
+    },
+    "Ridge_All": {
+      "Net_SR": 0.3527,
+      "Source": "expAH",
+      "Turnover": 0.2332
+    },
+    "Ridge_All_Q": {
+      "Net_SR": 0.4815,
+      "Source": "expAH",
+      "Turnover": 0.1129
+    },
+    "Ridge_Fast": {
+      "Net_SR": 0.2082,
+      "Source": "expAH",
+      "Turnover": 0.3006
+    },
+    "Ridge_Slow": {
+      "Net_SR": 0.472,
+      "Source": "expAH",
+      "Turnover": 0.1016
+    },
+    "Ridge_SlowMed": {
+      "Net_SR": 0.3929,
+      "Source": "expAH",
+      "Turnover": 0.1451
+    },
+    "Ridge_Slow_Q": {
+      "Net_SR": 0.4881,
+      "Source": "expAH",
+      "Turnover": 0.0734
+    },
+    "SpeedTercile": {
+      "Net_SR": 0.4695,
+      "Source": "expAN",
+      "Turnover": 0.1337
+    },
+    "WF-EMA": {
+      "Net_SR": 0.4513,
+      "Source": "expAR",
+      "Turnover": 0.1028
+    },
+    "XGB_All": {
+      "Net_SR": 0.3003,
+      "Source": "expCP",
+      "Turnover": 0.3455
+    },
+    "XGB_Slow": {
+      "Net_SR": 0.2629,
+      "Source": "expCP",
+      "Turnover": 0.2865
+    }
+  }
+}

@@ -1,0 +1,16 @@
+Market,Sort_Strategy,ML_Strategy,Crossover_Point,CI_lo_95,CI_hi_95,CI_Width,Assessment,N_months,N_valid_boots,Task
+BRA,MomentumSort,Ridge,0.5,0.5,2.945,2.445,Wide,83,887,T2_Bootstrap_Crossover
+CHN,MomentumSort,Ridge,5.0,1.072,5.0,3.928,Wide,78,902,T2_Bootstrap_Crossover
+GRC,MomentumSort,Ridge,5.0,1.156,5.0,3.844,Wide,78,912,T2_Bootstrap_Crossover
+IDN,MomentumSort,Ridge,0.5,0.5,2.839,2.339,Wide,80,874,T2_Bootstrap_Crossover
+IND,MomentumSort,Ridge,0.5,0.5,2.905,2.405,Wide,81,900,T2_Bootstrap_Crossover
+KOR,MomentumSort,Ridge,5.0,1.019,5.0,3.981,Wide,86,864,T2_Bootstrap_Crossover
+MEX,MomentumSort,Ridge,1.178,0.5,5.0,4.5,Wide,93,885,T2_Bootstrap_Crossover
+MYS,MomentumSort,Ridge,5.0,1.072,5.0,3.928,Wide,90,898,T2_Bootstrap_Crossover
+PHL,MomentumSort,Ridge,5.0,1.083,5.0,3.917,Wide,87,909,T2_Bootstrap_Crossover
+POL,MomentumSort,Ridge,5.0,1.021,5.0,3.979,Wide,69,883,T2_Bootstrap_Crossover
+SAU,MomentumSort,Ridge,0.5,0.5,2.846,2.346,Wide,56,906,T2_Bootstrap_Crossover
+THA,MomentumSort,Ridge,0.5,0.5,2.986,2.486,Wide,84,881,T2_Bootstrap_Crossover
+TUR,MomentumSort,Ridge,5.0,1.067,5.0,3.933,Wide,79,856,T2_Bootstrap_Crossover
+TWN,MomentumSort,Ridge,5.0,1.134,5.0,3.866,Wide,78,917,T2_Bootstrap_Crossover
+ZAF,MomentumSort,Ridge,0.5,0.5,2.887,2.387,Wide,93,904,T2_Bootstrap_Crossover

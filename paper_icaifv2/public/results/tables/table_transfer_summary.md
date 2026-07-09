@@ -1,0 +1,8 @@
+| Diagnostic | Value |
+| --- | --- |
+| In-sample R2 | 0.724 |
+| Leave-one-market-out R2 | 0.596 |
+| Leave-five-markets-out R2 | 0.688 |
+| Lambda std. across LOMO | 0.008 |
+| Slow-feature Jaccard | 0.971 |
+| Universal slow features | 52 |

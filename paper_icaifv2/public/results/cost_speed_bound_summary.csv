@@ -1,0 +1,2 @@
+spec,fsi_definition,lambda,intercept,r2,n,per_kappa_lambda_mean,per_kappa_lambda_std
+degradation_on_kappa_fsi,equal_weight_feature_set,0.39245769604624603,0.05912647984373404,0.7238699193991565,300,0.33435882846708564,0.0006523641653929653
