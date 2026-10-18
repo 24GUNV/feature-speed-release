@@ -837,7 +837,7 @@ def full_oos_tree_ema_and_construction_checks(checks: list[Check], computed: dic
             f"expDM {dm_sr['MomentumSort']:.4f} vs expAX {sum(ax_mom) / len(ax_mom):.4f}",
         )
     )
-    paper_text = read_text("paper_icaifv2/main_v6_frontier.tex")
+    paper_text = read_text("paper_icaifv2/main_camera_ready.tex")
     replicate_disclosed = "does not replicate on the full sample" in paper_text
     stale_claim = "net SR rises to 0.53" in paper_text or "achieves net SR 0.53" in paper_text
     checks.append(
@@ -975,7 +975,7 @@ def source_and_provenance_checks(checks: list[Check]) -> None:
         )
 
     bound_text = read_text("scripts/concern_experiments/generate_bound_figure.py")
-    paper_text = read_text("paper_icaifv2/main_v6_frontier.tex")
+    paper_text = read_text("paper_icaifv2/main_camera_ready.tex")
     checks.append(
         Check(
             "Bound figure FSI formula matches paper text",

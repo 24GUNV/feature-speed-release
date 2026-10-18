@@ -1,8 +1,8 @@
 {
   "version": "2026-07-06",
   "paper": {
-    "source_tex": "paper_icaifv2/main_v6_frontier.tex",
-    "source_pdf": "paper_icaifv2/main_v6_frontier.pdf",
+    "source_tex": "paper_icaifv2/main_camera_ready.tex",
+    "source_pdf": "paper_icaifv2/main_camera_ready.pdf",
     "figures_dir": "paper_icaifv2/figures"
   },
   "canonical_results": [

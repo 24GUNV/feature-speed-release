@@ -12,7 +12,7 @@
 
 %% Conference information
 \acmConference[ICAIF '26]{7th ACM International Conference on AI in Finance}{November 14--17, 2026}{Milan, Italy}
-\acmBooktitle{}
+\acmBooktitle{Proceedings of the 7th ACM International Conference on AI in Finance (ICAIF '26), November 14--17, 2026, Milan, Italy}
 \acmISBN{}
 
 %% Packages
@@ -230,7 +230,7 @@ Factor Data~\cite{JensenKellyPedersen2023}: BRA, CHN, GRC, IDN, IND,
 KOR, MEX, MYS, PHL, POL, SAU, THA, TUR, TWN, and ZAF. Each provides
 154 firm-level characteristics. The prediction target is the one-month
 excess return (\texttt{ret\_1\_0}). For each market-month, we restrict
-to the top $N$ stocks by market cap ($N \in \{50, 300\}$; most at 100).
+to the top $N$ stocks by market cap ($N \in [50, 300]$; most at 100).
 Features are lagged \emph{before} universe filtering to avoid collider
 bias, since $\text{me}(T) = \text{me}(T{-}1) \times (1{+}r_T)$.
 
@@ -249,7 +249,7 @@ $\tilde{y}_{i,t} = \text{Rank}(r_{i,t}) / N_t$.
 
 We use expanding-window walk-forward with 60-month minimum training.
 Models retrain monthly on all available data up to time $t$. The OOS
-period begins 2016--2018 (market-dependent), yielding 55--93 OOS months.
+period begins 2016--2018 (market-dependent), yielding 56--93 OOS months.
 
 \subsection{Transaction Cost Model}
 
@@ -641,11 +641,12 @@ the mechanism.
 
 \paragraph{Implication.}
 The binding constraint is prediction \emph{stability}, not accuracy.
-EMA is a universal fix: it improves Ridge (+0.10~SR), transforms
-XGBoost (+0.44~SR), but cannot fully compensate for piecewise-constant
-surfaces. Trees' superior gross signal (0.91 with EMA vs.\ 0.63 for
-Ridge\_Slow) is partially offset by residual instability, explaining
-why simple linear models remain competitive after
+EMA is a universal lever: it improves Ridge (+0.10~SR) and XGBoost
+(+0.11 walk-forward, +0.21 post hoc), but cannot fully compensate
+for piecewise-constant surfaces. Trees' superior gross signal (0.72
+unsmoothed vs.\ 0.61 for Ridge\_Slow on the main OOS sample) is
+offset by residual instability, explaining why simple linear models
+remain competitive after
 costs~\cite{gu2020empirical, esakia2025longonly}.
 
 \begin{figure}[t]
@@ -906,7 +907,7 @@ deployment, and if FSI exceeds $\sim$0.15, restrict features or apply
 smoothing.
 
 \paragraph{Limitations.}
-Our OOS spans 55--93 months per market with cross-country correlation
+Our OOS spans 56--93 months per market with cross-country correlation
 ${\sim}$0.6, limiting statistical power (see
 Section~\ref{sec:robustness} for formal tests). The Corwin-Schultz
 cost model with 3$\times$ multiplier is validated against an EM equity
@@ -989,7 +990,7 @@ correction are significant at 5\% in no individual market for
 MomSort~$>$~Ridge (aggregate Wilcoxon $p = 0.45$) or
 MomSort~$>$~XGBoost ($p = 0.008$), and in 1/15 markets for
 MomSort~$>$~LightGBM ($p = 0.003$); individual markets lack power at
-55--93 OOS months.
+56--93 OOS months.
 For Ridge\_Slow vs.\ MomSort, we pool monthly net returns across all
 15 markets and apply a block bootstrap (10{,}000 replications,
 resampling dates to preserve cross-market dependence): one-sided

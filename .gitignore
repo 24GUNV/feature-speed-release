@@ -18,3 +18,7 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# Review-only latexdiff output
+*_diff.tex
+*_diff.pdf

@@ -433,20 +433,21 @@ def plot_ic_decay(agg):
     """Create the publication figure for mean IC decay and retention."""
     os.makedirs(os.path.dirname(FIG_OUTPUT), exist_ok=True)
 
+    # Same palette and markers as the cost-speed bound figure
+    # (Ridge_Slow / Ridge_SlowMed / Ridge_Fast).
     colors = {
-        'SLOW': '#2ca02c',
-        'MEDIUM': '#1f77b4',
-        'FAST': '#d62728',
+        'SLOW': '#2166ac',
+        'MEDIUM': '#67a9cf',
+        'FAST': '#d6604d',
     }
-    markers = {'SLOW': 'o', 'MEDIUM': 's', 'FAST': '^'}
+    markers = {'SLOW': 'o', 'MEDIUM': 's', 'FAST': 'v'}
 
     plt.rcParams.update({
-        'font.size': 8,
-        'axes.labelsize': 8,
-        'axes.titlesize': 9,
+        'font.size': 8.5,
+        'axes.labelsize': 8.5,
         'legend.fontsize': 7,
-        'xtick.labelsize': 7,
-        'ytick.labelsize': 7,
+        'xtick.labelsize': 7.5,
+        'ytick.labelsize': 7.5,
     })
 
     fig, axes = plt.subplots(2, 1, figsize=(3.35, 4.2), sharex=True)
@@ -456,20 +457,23 @@ def plot_ic_decay(agg):
         axes[0].plot(
             data['horizon'], data['mean_aligned_ic'],
             marker=markers[speed], color=colors[speed], linewidth=1.4,
-            markersize=3.5, label=speed,
+            markersize=4, markeredgecolor='white', markeredgewidth=0.3,
+            label=speed,
         )
         axes[1].plot(
             data['horizon'], data['retention'],
             marker=markers[speed], color=colors[speed], linewidth=1.4,
-            markersize=3.5,
+            markersize=4, markeredgecolor='white', markeredgewidth=0.3,
         )
 
-    axes[0].axhline(0, color='0.75', linewidth=0.6)
+    axes[0].axhline(0, color='black', alpha=0.55, linewidth=0.6)
     axes[0].set_ylabel('Mean aligned rank IC')
-    axes[0].set_title('IC Decay by Feature Speed')
-    axes[0].legend(frameon=False, ncol=3, loc='upper right')
+    axes[1].legend(
+        *axes[0].get_legend_handles_labels(),
+        ncol=3, loc='lower left', framealpha=0.9, edgecolor='gray',
+    )
 
-    axes[1].axhline(0.5, color='0.65', linewidth=0.7, linestyle='--')
+    axes[1].axhline(0.5, color='black', alpha=0.55, linewidth=0.7, linestyle='--')
     axes[1].set_xlabel('Horizon (months)')
     axes[1].set_ylabel('Retention vs h=1')
     axes[1].set_xticks(HORIZONS)
@@ -478,7 +482,7 @@ def plot_ic_decay(agg):
     for ax in axes:
         ax.spines['top'].set_visible(False)
         ax.spines['right'].set_visible(False)
-        ax.grid(True, axis='y', color='0.9', linewidth=0.5)
+        ax.grid(True, alpha=0.2)
 
     plt.tight_layout()
     fig.savefig(FIG_OUTPUT, bbox_inches='tight', dpi=300)
@@ -612,4 +616,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    if '--plot-only' in sys.argv:
+        # Redraw the figure from the saved aggregate without recomputing ICs.
+        plot_ic_decay(pd.read_csv(AGG_OUTPUT))
+    else:
+        main()

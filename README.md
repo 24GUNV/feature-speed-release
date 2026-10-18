@@ -1,13 +1,15 @@
 # Feature Speed, Transaction Costs, and the Limits of Machine Learning in Emerging Markets
 
-[![paper](https://img.shields.io/badge/paper-PDF-b31b1b)](paper_icaifv2/main_v6_frontier.pdf)
-[![ICAIF 2026](https://img.shields.io/badge/ICAIF%202026-under%20review-5c6bc0)](https://ai-finance.org)
+[![paper](https://img.shields.io/badge/paper-PDF-b31b1b)](paper_icaifv2/main_camera_ready.pdf)
+[![ICAIF 2026](https://img.shields.io/badge/ICAIF-2026-5c6bc0)](https://icaif2026.org)
 [![verified claims](https://img.shields.io/badge/verified%20claims-99%2F99-2e7d32)](paper_icaifv2/public/results/verification_report.md)
 [![license](https://img.shields.io/badge/license-MIT-4caf50)](LICENSE)
 [![python](https://img.shields.io/badge/python-3.11%2B-3776ab)](requirements.txt)
 
 Code and verified results for the paper *"Feature Speed, Transaction Costs,
-and the Limits of Machine Learning in Emerging Markets"* (under review).
+and the Limits of Machine Learning in Emerging Markets"* by Kanpat Vesessook
+and Nut Chukampaeng (SCBX), to appear at the 7th ACM International Conference
+on AI in Finance (ICAIF '26), Milan, Italy.
 
 Across 15 emerging markets, eight intervention variants spanning four
 mechanism families converge on
@@ -38,7 +40,8 @@ before any trading occurs (R² = 0.73).
 
 ```
 paper_icaifv2/
-  main_v6_frontier.tex        Paper source (ACM sigconf, anonymized)
+  main_camera_ready.tex       Paper source (ACM sigconf, camera-ready)
+  main_v6_frontier.tex        Submitted version (anonymized)
   figures/                    Publication figures (PDF)
   public/
     MANIFEST.json             Canonical experiment scripts, outputs, caveats
@@ -110,6 +113,21 @@ These are enforced by the verifier's source guardrails:
 5. **Rank targets** — all ML models train on cross-sectional percentile ranks.
 6. **Costs** — Corwin-Schultz half-spread × κ, clipped to [20, 200] bps;
    baseline κ = 3 for EM.
+
+## Citation
+
+```bibtex
+@inproceedings{vesessook2026featurespeed,
+  title     = {Feature Speed, Transaction Costs, and the Limits of Machine
+               Learning in Emerging Markets},
+  author    = {Vesessook, Kanpat and Chukampaeng, Nut},
+  booktitle = {Proceedings of the 7th ACM International Conference on AI in
+               Finance (ICAIF '26)},
+  year      = {2026},
+  address   = {Milan, Italy},
+  publisher = {ACM}
+}
+```
 
 ## License
 

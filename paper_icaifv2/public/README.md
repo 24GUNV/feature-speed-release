@@ -1,6 +1,7 @@
 # ICAIF v2 Public Evidence Path
 
-This directory is the clean, paper-specific public area for `main_v6_frontier`.
+This directory is the clean, paper-specific public area for the camera-ready paper
+(`main_camera_ready`; the submitted version is `main_v6_frontier`).
 It does not replace or modify the repository-level `public/` directory.
 
 ## Main Commands
